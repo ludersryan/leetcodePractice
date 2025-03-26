@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate",
-      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate/build/Debug/outDebug",
+      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate_II",
+      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate_II/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
