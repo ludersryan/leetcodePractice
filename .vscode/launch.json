@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Best_Time_To_Buy_And_Sell_Stock",
-      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Best_Time_To_Buy_And_Sell_Stock/build/Debug/outDebug",
+      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate",
+      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
