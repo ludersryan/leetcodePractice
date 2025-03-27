@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate_II",
-      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Contains_Duplicate_II/build/Debug/outDebug",
+      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Product_Of_Array_Except_Self",
+      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Product_Of_Array_Except_Self/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
