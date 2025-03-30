@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Product_Of_Array_Except_Self",
-      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Product_Of_Array_Except_Self/build/Debug/outDebug",
+      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Valid_Anagram",
+      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Valid_Anagram/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
