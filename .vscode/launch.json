@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Valid_Anagram",
-      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Valid_Anagram/build/Debug/outDebug",
+      "cwd": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Two_Sum",
+      "program": "c:/Users/Ryan/Documents/GitHub/leetcodePractice/Two_Sum/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
