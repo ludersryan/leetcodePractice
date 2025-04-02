@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        closeToOpen = { ")" : "()", "]" : "[", "{" : "}"}
+        closeToOpen = { ")" : "(", "]" : "[", "}" : "{"}
         
         for c in s:
             if c in closeToOpen: # a closing bracket
@@ -11,4 +11,5 @@ class Solution:
                     return False
             else:
                 stack.append(c) # add to stack if its a open 
+
         return True if not stack else False # stack must be empty for true
