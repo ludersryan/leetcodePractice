@@ -4,8 +4,11 @@ class NumArray(object):
         """
         :type nums: List[int]
         """
-        subarray_sum=0
-        array = nums
+        self.prefixSum = [0] * len(nums)  # Create a new list for prefix sums
+        self.prefixSum[0] = nums[0]  # First value is the same
+
+        for i in range(1, len(nums)):
+            self.prefixSum[i] = self.prefixSum[i - 1] + nums[i]  # Compute prefix sum
 
     def sumRange(self, left, right):
         """
@@ -13,10 +16,11 @@ class NumArray(object):
         :type right: int
         :rtype: int
         """
-        
-        
-        for k in range(left, right + 1):
-            subarray_sum += array[k]
+        if left == 0:
+            return self.prefixSum[right]
+        return self.prefixSum[right] - self.prefixSum[left - 1]
+
+
 
 
 # Your NumArray object will be instantiated and called as such:
