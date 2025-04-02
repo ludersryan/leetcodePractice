@@ -1,15 +1,17 @@
 from typing import List
-from collections import defaultdict
+
 
 def two_sum(nums: List[int], target: int) -> List[int]:
-    sums = defaultdict(int)
+    myDict = {}
     for i, num in enumerate(nums):
         complement = target - num
-        if complement in sums:
-            return [sums[complement], i]
-        sums[num] = i
+        if complement in myDict.values():
+            return [complement, num]
+        myDict[i] = num
+
 
     return []
+
 
 nums = [2,7,11,15]
 target = 9
