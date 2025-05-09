@@ -5,7 +5,6 @@ class Solution(object):
         for i, char in enumerate(prefix):
             if s1[i] != char:
                 return False
-
         return True
     
 sol = Solution()
