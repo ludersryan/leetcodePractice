@@ -1,6 +1,6 @@
 class Solution(object):
     def substrOccuranceCount(self, text: str, word: str) -> int:
-        if text is None or len(word) > len(text):
+        if not text or len(word) > len(text):
             raise ValueError("text is None or word > text.")
         
         #if text == word, return 1
@@ -24,6 +24,6 @@ class Solution(object):
         return result
     
 test = Solution()
-text = "banana"
-word = "ana"
+text = ""
+word = ""
 print(test.substrOccuranceCount(text, word))
