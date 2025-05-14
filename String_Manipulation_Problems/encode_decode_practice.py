@@ -1,31 +1,46 @@
+# Design an algo to encode a list of strings to a single string.
+# Encoded string is then decoded back to the orignal list of strings
+# Input: ["neet", "code", "loves", "you"]
+# Input can be any char
+# We need to add delimiters, done in encode
+# Encode must add delimiter plus a num of how many chars in string since it could contain the delimiter
+
+# Decode will then take string len until delimiter
+# using this split string back into list
+
+
 class Solution():
-    def encode(self, strs: list[str]) -> str:
-        # add delimiter between strings, along with string length
-        encoded = ""
-        for string in strs:
-            encoded += str(len(string)) + "#" + string
+    def encode(self,myList: list[str]) -> str:
+        # Our delimiter will be "/"
+        rStr = ""
+        for s in myList:
+            rStr += str(len(s)) + "/" + s
         
-        return encoded
-
-
-    def decode(self, s: str) -> list[str]:
-        #go through string look for delimiter
-        # while looking for delim find len of string positioned before delim
-        #append string into list object by using the len char before delimiter
-        rList = []
+        return rStr
+    """
+    At this point we will have 4/neet4/code5/loves3/you
+    """
+    
+    def decode(self,myStr: str) -> list[str]:
         i = 0
-        while i < len(s):
+        rList = []
+        # i is now at place of first delimiter, in our case i=1
+        # Use j and i as points for string extraction, i will be the start j will be the end
+        while i<len(myStr):
             j = i
-            while s[j] != "#": # find pos of #
-                j += 1
-            length = int(s[i:j])
-            i = j + 1 # Start after '#'
-            j = i + length # extract the string
-            rList.append(s[i:j])
+            while myStr[j] != "/":
+                j+=1
+            strlen = int(myStr[i:j]) # this will hold val of len of string
+            i = j + 1 # i will be the start of next str
+            j = strlen + i
+            rList.append((myStr[i:j]))
             i = j
         return rList
 
-s = Solution()
-myInput = ["neet","code","love","you"]
-print(s.encode(myInput))
-print(s.decode(s.encode(myInput)))
+
+
+    
+sol = Solution()
+input = ["neet", "code", "loves", "you"]
+print(sol.decode(sol.encode(input)))
+
